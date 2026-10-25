@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Page configuration
-st.set_page_config(page_title="Workstyle V+ Lens Calculator", layout="centered")
+st.set_page_config(page_title="Workstyle Lens Calculator", layout="centered")
 
 # Custom CSS to enlarge all text by ~2 points
 st.markdown("""
@@ -17,7 +17,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.title("👓 Workstyle V+ Lens Calculator")
-st.markdown("Enter your **Distance Rx** and **Near ADD** below to instantly calculate the required powers across all lens options.")
+st.markdown("Enter your **Distance Rx** and **Near ADD** only to calculate the powers at the fitting cross and 8mm above the fitting cross.")
 
 # Input Section
 col1, col2 = st.columns(2)
