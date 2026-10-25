@@ -16,7 +16,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("👓 Workstyle Lens Calculator")
+st.title("Workstyle Lens Calculator")
 st.markdown("Enter the **Distance Rx** and **Near ADD** only to calculate the powers **at the fitting cross** and 8mm above the fitting cross.")
 
 # Input Section
