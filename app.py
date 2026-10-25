@@ -104,7 +104,7 @@ st.sidebar.markdown("---")
 st.sidebar.info("Use this sidebar to record patient-specific info or clinical notes.")
 
 st.title("Workstyle Lens Calculator")
-st.markdown("Enter the **Distance Rx** and **Near ADD** only to calculate the powers **at the fitting cross**, 8mm above the fitting cross, and the **Full Near Rx**.")
+st.markdown("Enter the **Distance Rx** and **Near ADD** only to calculate the powers **at the fitting cross**, **8mm above**, and the **Full Near Rx**.")
 
 # Input Section
 col1, col2 = st.columns(2)
