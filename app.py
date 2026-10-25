@@ -16,8 +16,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("👓 Workstyle V+ Lens Calculator")
-st.markdown("Enter your **Distance Rx** and **Near ADD** only to calculate the powers at the fitting cross and 8mm above the fitting cross.")
+st.title("👓 Workstyle Lens Calculator")
+st.markdown("Enter the **Distance Rx** and **Near ADD** only to calculate the powers at the fitting cross and 8mm above the fitting cross.")
 
 # Input Section
 col1, col2 = st.columns(2)
@@ -29,7 +29,7 @@ with col2:
 def calculate_lenses(c3, c9):
     results = {}
     
-    # --- Workstyle Space (Column C) ---
+    # --- Space (Column C) ---
     c_c3 = c3
     c_c9 = c9
     c_c11 = c_c9 * 0.43
@@ -43,7 +43,7 @@ def calculate_lenses(c3, c9):
         'RX 8MM ABOVE FITTING CROSS': f"{c_c22:.2f}"
     }
 
-    # --- Workstyle Screen (Column E) ---
+    # --- Screen (Column E) ---
     e_e3 = c_c3 + (0.22 * c_c9)
     e_e13 = c_c3 + c_c9
     e_e9 = e_e13 - e_e3
@@ -58,7 +58,7 @@ def calculate_lenses(c3, c9):
         'RX 8MM ABOVE FITTING CROSS': f"{e_e22:.2f}"
     }
 
-    # --- Workstyle Screen (Adds 2.50D & Over) (Column G) ---
+    # --- Screen (Adds 2.50D & Over) (Column G) ---
     g_g3 = c_c3 + 0.54
     g_g9 = c_c9 - 0.54
     g_g11 = g_g9 * 0.43
@@ -72,7 +72,7 @@ def calculate_lenses(c3, c9):
         'RX 8MM ABOVE FITTING CROSS': f"{g_g22:.2f}"
     }
 
-    # --- Workstyle Close (Column H) ---
+    # --- Close (Column H) ---
     h_h3 = c_c3 + (0.4 * c_c9)
     h_h13 = c_c3 + c_c9
     h_h9 = h_h13 - h_h3
@@ -86,7 +86,7 @@ def calculate_lenses(c3, c9):
         'RX 8MM ABOVE FITTING CROSS': f"{h_h22:.2f}"
     }
 
-    # --- Workstyle Close (Add 2.50D & Over) (Column J) ---
+    # --- Close (Add 2.50D & Over) (Column J) ---
     j_j3 = c_c3 + 1.0
     j_j9 = c_c9 - 1.0
     j_j11 = j_j9 * 0.43
