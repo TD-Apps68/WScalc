@@ -17,7 +17,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.title("👓 Workstyle Lens Calculator")
-st.markdown("Enter the **Distance Rx** and **Near ADD** only to calculate the powers at the fitting cross and 8mm above the fitting cross.")
+st.markdown("Enter the **Distance Rx** and **Near ADD** only to calculate the powers at the **fitting cross** and **8mm above** the fitting cross.")
 
 # Input Section
 col1, col2 = st.columns(2)
@@ -39,7 +39,7 @@ def calculate_lenses(c3, c9):
     c_c21 = c_c9 / 15 + c_c20
     c_c22 = c_c9 / 15 + c_c21  # 8mm Above
     results['Workstyle Space'] = {
-        'RX AT FITTING CROSS': f"{c_c6:.2f}", 
+        '**RX AT FITTING CROSS**': f"{c_c6:.2f}", 
         'RX 8MM ABOVE FITTING CROSS': f"{c_c22:.2f}"
     }
 
